@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "deploy": "npm run build && gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
@@ -28,8 +29,4 @@
     "typescript": "^5"
   }
 }
-  "homepage": "https://target-ops.github.io/lakerda",
-  "scripts": {
-    "build": "next build && next export",
-    "deploy": "npm run build && gh-pages -d out"
-  },
+
